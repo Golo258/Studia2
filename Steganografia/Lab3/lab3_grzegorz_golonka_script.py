@@ -2,6 +2,8 @@ import numpy as np
 from PIL import Image
 import random
 
+#  jak działa funkcja losująca, i w którym kanale RGB jest schowana wiadomość
+
 def text_to_bits(text):
     return ''.join(f'{ord(c):08b}' for c in text)
 
