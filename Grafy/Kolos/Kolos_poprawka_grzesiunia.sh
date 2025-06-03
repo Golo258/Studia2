@@ -249,3 +249,46 @@ Zestaw 5:
             jest 6 wierzchołków stopnia 1 
             wiec razem jest 7 + 6 = 13 wierzchołków
         
+
+    Zadanie 4:
+        Podaj kod prufera dla grafu 
+            Sposób zakodowania drzewa - spójny acykliczny - jako ciągu lcizb całkowitych
+                kod prufera dla x wierzchołków ma x - 2 długość
+
+            1. Numerujemy wierzchołki, od 1 do n, nadajemy im wagi
+            2. Wybieramy liść o najmniejszym numerze czyli wierzchołek stopnia 1 
+            3. Dopisujemy jego sąsiada do kodu
+            4. Usuwamy liść z drzewa
+            5. Powtarzym 2- 4 az zostaną2 wierzcholki
+
+        teraz taka bajerka, jest drzewo
+        Przykłąd d 
+            liczymy wagi
+            1 2 5 9 10 to liście
+            3  - stopnie 4 
+            4, 7 i 8  - stopien 2 
+            6 ma stopni 3 
+
+            to liczymy 
+            1 -> 3 [ 3 
+            2 -> 3 [ 3 3 
+            5 -> 3 [ 3 3 3 
+            4 staje sie lisciem, 3 ma nadal 2 stopnie
+            4-> 3 [ 3 3 3 3 
+            3 staje sie lisciem
+            3 -> 6 -> [ 3 3 3 3 6 
+            9 ->6 [  3 3 3 3 6  6
+            7 - 6  [  3 3 3 3 6  6 6 
+            6 staje sie lisciem
+            6 -> 8 [  3 3 3 3 6  6 6 8 
+            i konczymy 
+            Zostaja dwa wierzchołki
+
+
+    Graf Kn - każdy jest połączono z każdym a n to liczba wierzchołków
+        Ile dendrytów:
+            Kn  = n ^ n - 2 
+            K2 = 2 * 2 -2 = 2 * 0 =1 
+            K3 = 3 * 3 -2 = 3 *1 = 3
+            K4 = 4 * 2 = 16 itd
+            
